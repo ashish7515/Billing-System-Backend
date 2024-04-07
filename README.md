@@ -21,5 +21,3 @@ If you're looking to interact with our system programmatically, all our API rout
 
 ### Additional Notes
 - If you're adding a new customer, use `POST /api/customers/` to create their profile. If the customer is already registered, you can find them in our database using a simple GET request.
-
-That should cover everything you need to know to get started with our API! If you have any questions, feel free to reach out.
