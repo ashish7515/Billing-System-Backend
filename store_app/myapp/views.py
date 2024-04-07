@@ -41,18 +41,24 @@ class CustomerDetailAPIView(generics.RetrieveUpdateDestroyAPIView):
 class BillList(generics.ListCreateAPIView):
     queryset = Bill.objects.all()
     serializer_class = BillSerializer
+    permission_classes = [permissions.IsAuthenticated]
 
 class BillDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Bill.objects.all()
     serializer_class = BillSerializer
+    permission_classes = [permissions.IsAuthenticated]
 
 class BillItemList(generics.ListCreateAPIView):
     queryset = BillItem.objects.all()
     serializer_class = BillItemSerializer
+    permission_classes = [permissions.IsAuthenticated]
 
 class BillItemDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = BillItem.objects.all()
     serializer_class = BillItemSerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+    
 # class BillCreateAPIView(generics.CreateAPIView):
 #     queryset = Bill.objects.all()
 #     serializer_class = BillSerializer
